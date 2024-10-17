@@ -3,64 +3,14 @@
 This project presents a basic design and implementation for an e-commerce system, including a class diagram and code for the main components.
 
 ## Project Structure
-project_root/
-│
-├── README.md
-├── class_diagram.md
-│
-└── src/
-├── models/
-│ ├── user.py
-│ ├── product.py
-│ ├── order.py
-│ └── payment.py
-│
-├── ecommerce_system.py
-└── test_ecommerce_system.py
+System Design/
+![Project Strucure](path_to_image_in_repo/Project Structure.png)
 
 
 ## Class Diagram
 
 The class diagram outlining the relationships between User, Product, Order, and Payment is as follows:
-classDiagram
-    User "1" -- "*" Order
-    Order "*" -- "*" Product
-    Order "1" -- "1" Payment
-    class User {
-        +int id
-        +string name
-        +string email
-        +List<Order> orders
-        +create_order()
-        +view_orders()
-        +manage_order()
-    }
-    class Product {
-        +int id
-        +string name
-        +float price
-        +get_details()
-    }
-    class Order {
-        +int id
-        +User user
-        +List<Product> products
-        +float total_amount
-        +string status
-        +add_product()
-        +remove_product()
-        +update_status()
-        +get_order_details()
-    }
-    class Payment {
-        +int id
-        +Order order
-        +float amount
-        +string payment_method
-        +string status
-        +process_payment()
-        +get_payment_status()
-    }
+![Class Diagram](path_to_image_in_repo/class diagram.png)
 
     
 ## Components
