@@ -18,11 +18,26 @@ This project helps manage inventory for a warehouse. It can process orders, upda
    ```
    python inventory_management.py
    ```
+## Functions
 
-## Main functions
+### `process_orders(products, orders, threshold=10)`
 
-1. `process_orders()`: Handles orders and updates inventory
-2. `restock_items()`: Adds more items to the inventory
+Processes a list of orders and updates the inventory accordingly.
+
+- Parameters:
+  - `products`: A dictionary of products and their current stock levels.
+  - `orders`: A list of tuples, each containing a product name and order quantity.
+  - `threshold`: The stock level below which a restock alert is generated (default: 10).
+- Returns: A list of restock alerts.
+
+### `restock_items(products, restock_list)`
+
+Restocks items in the inventory.
+
+- Parameters:
+  - `products`: A dictionary of products and their current stock levels.
+  - `restock_list`: A list of tuples, each containing a product name and restock quantity.
+
 
 ## How it works
 
