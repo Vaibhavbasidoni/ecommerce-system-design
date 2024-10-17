@@ -4,13 +4,13 @@ This project presents a basic design and implementation for an e-commerce system
 
 ## Project Structure
 System Design/
-![Project Strucure](path_to_image_in_repo/Project Structure.png)
+ ![Project Strucure](Project Structure.png)
 
 
 ## Class Diagram
 
 The class diagram outlining the relationships between User, Product, Order, and Payment is as follows:
-![Class Diagram](path_to_image_in_repo/class diagram.png)
+ ![Class Diagram](class diagram.png)
 
     
 ## Components
