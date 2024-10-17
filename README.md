@@ -3,15 +3,18 @@
 This project presents a basic design and implementation for an e-commerce system, including a class diagram and code for the main components.
 
 ## Project Structure
-System Design/
+project_root/
+│
 ├── README.md
 ├── class_diagram.md
+│
 └── src/
 ├── models/
 │ ├── user.py
 │ ├── product.py
 │ ├── order.py
 │ └── payment.py
+│
 ├── ecommerce_system.py
 └── test_ecommerce_system.py
 
